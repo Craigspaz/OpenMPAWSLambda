@@ -2,9 +2,7 @@
 #include <omp.h>
 
 int main()
-{
-	int threadCounter = 0;
-	
+{	
 	#pragma omp parallel num_threads(4)
 	{
 		int currentThread = omp_get_thread_num();
